@@ -1,0 +1,18 @@
+{
+  "presets": [
+    "react-app"
+  ],
+  "plugins": [
+    [
+      "i18next-extract",
+      {
+        "locales": ["en-US"],
+        "outputPath": "src/translations/{{locale}}/{{ns}}.json",
+        "keyAsDefaultValue": ["en-US"],
+        "discardOldKeys": true,
+        "keySeparator": false,
+        "nsSeparator": false
+      }
+    ]
+  ]
+}
